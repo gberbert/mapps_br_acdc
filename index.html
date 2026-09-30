@@ -8,7 +8,25 @@
   <!-- SEO & Meta Tags -->
   <meta name="description" content="Presentación Ejecutiva de la Plataforma ACDC (Automated Configuration & Definition Cockpit) para MAPFRE Seguros. Modernización de la capa MongoDB de Suscripción (DUP) y Tarifación (RTE Tronador) con Gobernanza PECA e IA Generativa Especializada.">
   <meta name="author" content="AS - MAPPS Brasil: Leandro Bruzzese, Gustavo Costa Berbert, Marcio Miguel">
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="assets/logo_stacked.png">
+  <link rel="apple-touch-icon" href="assets/logo_stacked.png">
+
+  <!-- Open Graph / Rich Social Preview (Teams, WhatsApp, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gberbert.github.io/mapps_br_acdc/">
+  <meta property="og:title" content="ACDC Platform | Cockpit Actuarial e IA — MAPFRE & NTT DATA">
+  <meta property="og:description" content="Presentación Ejecutiva de la Plataforma ACDC para MAPFRE Seguros. Modernización de la capa MongoDB de Suscripción (DUP) y Tarifación (RTE Tronador) con Gobernanza PECA e IA Generativa Especializada.">
+  <meta property="og:image" content="https://gberbert.github.io/mapps_br_acdc/assets/og_preview.png">
+  <meta property="og:image:secure_url" content="https://gberbert.github.io/mapps_br_acdc/assets/og_preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NTT DATA & MAPFRE — ACDC Platform">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ACDC Platform | Cockpit Actuarial e IA — MAPFRE & NTT DATA">
+  <meta name="twitter:description" content="Presentación Ejecutiva de la Plataforma ACDC para MAPFRE Seguros.">
+  <meta name="twitter:image" content="https://gberbert.github.io/mapps_br_acdc/assets/og_preview.png">
+  <link rel="image_src" href="https://gberbert.github.io/mapps_br_acdc/assets/og_square.png">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,17 +142,20 @@
       min-width: 0;
     }
 
-    /* Co-branded Logos Capsule */
+    /* Co-branded Logos Capsule: NTT DATA on top, MAPFRE on bottom */
     .brand-logos-capsule {
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
-      gap: 12px;
+      justify-content: center;
+      gap: 3px;
       background: #ffffff;
-      padding: 6px 14px;
-      border-radius: 9px;
+      padding: 4px 12px;
+      border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
       flex-shrink: 0;
       border: 1px solid rgba(255, 255, 255, 0.4);
+      height: 50px;
       transition: var(--transition);
     }
 
@@ -144,24 +165,24 @@
     }
 
     .header-logo-ntt {
-      height: 22px;
+      height: 16px;
       width: auto;
-      max-width: 105px;
+      max-width: 88px;
       object-fit: contain;
       display: block;
     }
 
     .logo-divider-v {
-      width: 1px;
-      height: 20px;
+      width: 48px;
+      height: 1px;
       background: rgba(0, 0, 0, 0.18);
       flex-shrink: 0;
     }
 
     .header-logo-mapfre {
-      height: 19px;
+      height: 15px;
       width: auto;
-      max-width: 105px;
+      max-width: 88px;
       object-fit: contain;
       display: block;
     }
